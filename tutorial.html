@@ -10,35 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="shortcut icon" type="image/jpg" href="/img/favicon.ico"/>
 
-    <style>
-      /* Ensure the body and html take up the full height */
-      html, body {
-        height: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-      }
 
-      /* Main content area */
-      .main-content {
-        flex: 1; /* Takes up all available space, pushing the footer down */
-      }
-
-      footer {
-        background-color: #333; /* Darker background for better contrast */
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        margin-top: 20px;
-      }
-      footer a {
-        color: #00bfff;
-        text-decoration: none;
-      }
-      footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
   </head>
   <body>
     <!-- Main Content -->
@@ -46,9 +18,9 @@
       <!-- Navigation -->
       <nav>
         <ul class="nav nav-pills">
-          <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Tools</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">More</a> </li>
+          <li class="nav-item"> <a class="nav-link active" href="https://44h4.github.io/">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://44h4.github.io/tutorials.html">Tutorials</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="https://44h4.github.io/more.html">More</a> </li>
         </ul>
       </nav>
   
@@ -59,13 +31,21 @@
 
       <!-- Centered Text -->
       <div class="main-body" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;">
-        <h3>Welcome to Flux!</h3>
-        <p>Flux is an online gaming site designed for users looking to play games in restricted scenarios, such as schools. On this website, you’ll find convenient and quick ways to enjoy your favorite games.</p>
+        <h3>How to remove annoying extensions</h3>
+        <ol>
+          <li>Go to <a href="chrome://extensions" title="chrome://extensions" target="chrome://extensions">chrome://extensions</a> and  turn on Developer Mode <br><br> <img src=img/Turn_on_devmode.png></li><br>
+		  <li>Navigate to the Inspect views
+          background page (Service Workers don't work)<br><br><img src=img/Inspect_views.png></li><br>
+		  <li>Click on Inspect views and click Console<br><br><img src="img/Console.png" style="max-width: 70%; height: auto;">
+          </li><br>
+		  <li>Type in 'close (true); alert ("This extension has been quitted")' or 'window.close(true)'</li><br>
+		  <li>Done! Now it will stay until your device restarts. (Credit to Pro_Gamer213 at <a href="https://iogames.forum/t/how-to-disable-unbl0ck-securly-for-chromebook-ultimate-guide/17824">iogames.fourum</a></li>
+        </ol>
       </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;"  >
       <p>Raphael Gamba (44H4) | <a href="mailto:raphael.gamba7@outlook.com">raphael.gamba7@outlook.com</a> | <a href="https://github.com/44h4" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
 
