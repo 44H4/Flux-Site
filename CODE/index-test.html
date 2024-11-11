@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Flux</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon.ico"/>
+
+    <style>
+      /* Ensure the body and html take up the full height */
+      html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Main content area */
+      .main-content {
+        flex: 1; /* Takes up all available space, pushing the footer down */
+      }
+
+      footer {
+        background-color: #333; /* Darker background for better contrast */
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      footer a {
+        color: #00bfff;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Tools</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">More</a> </li>
+        </ul>
+      </nav>
+  
+      <!-- Centered Logo -->
+      <div style="display: flex; justify-content: center; margin: 20px;">
+        <img src="img/LOGO TRANSPARENT.png" alt="Flux Logo" style="width: 200px; height: auto;">
+      </div>
+
+      <!-- Centered Text -->
+      <div class="main-body" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;">
+        <h3>Welcome to Flux!</h3>
+        <p>Flux is an online gaming site designed for users looking to play games in restricted scenarios, such as schools. On this website, you’ll find convenient and quick ways to enjoy your favorite games.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Raphael Gamba (44H4) | <a href="mailto:raphael.gamba7@outlook.com">raphael.gamba7@outlook.com</a> | <a href="https://github.com/44h4" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+
+    <!-- jQuery (unminified version) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- Popper.js (unminified version) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js"></script>
+
+    <!-- Bootstrap JS (unminified version) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"></script>
+  </body>
+</html>
